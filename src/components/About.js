@@ -1,10 +1,10 @@
 import React from "react";
 
-function About() {
+function About(prop) {
   return (
     <div id="about">
       <h2>About Me</h2>
-      <p>Put the bio in here</p>
+      {prop.bio ? <p>{prop.bio}</p> : null}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       {/* add your <Links /> component here */}
     </div>
@@ -12,3 +12,4 @@ function About() {
 }
 
 export default About;
+
